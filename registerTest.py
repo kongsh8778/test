@@ -1,7 +1,7 @@
 #encoding=utf-8
 import requests,json
 
-address=r'http://192.168.1.7:8080/front/register'
+address=r'http://192.168.1.7:8282/front/register'
 '''用户注册'''
 def register():
     global pwd
@@ -12,3 +12,5 @@ def register():
 
     print(r.status_code)
     print(r.text)
+    
+register()
