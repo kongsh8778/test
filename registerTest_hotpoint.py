@@ -9,7 +9,7 @@ def register():
     print("register--------")
     data=json.dumps({'username':'ksh','password':'ksh','password2':'ksh'})
     r=requests.post(address,data=data)
-
+    print(r.url)
     print(r.status_code)
     print(r.text)
     
